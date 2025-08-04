@@ -18,14 +18,19 @@ export const styles = StyleSheet.create({
         padding: 5,
     },
     titulo: {
-        fontSize: 30,
-        padding: 15,
+        fontSize: 26,
+        paddingVertical: 12,
+        paddingHorizontal: 10,
         fontWeight: 'bold',
-        color: 'black',
-        backgroundColor: '#229adfff',
-        borderRadius: 5,
-        width: '100%',
-        textAlign: 'center'
+        color: 'white',
+        backgroundColor: '#229adf',
+        borderRadius: 10,
+        textAlign: 'center',
+        marginVertical: 20,
+        elevation: 3,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
     },
     imagen: {
         width: 220,
@@ -43,30 +48,51 @@ export const styles = StyleSheet.create({
         marginRight: 10
     },
     textbutton: {
-
         color: 'white',
         fontSize: 17,
         fontWeight: 'bold'
     },
     input: {
-        height: 40,
-        margin: 12,
+        height: 45,
+        marginVertical: 10,
+        marginHorizontal: 20,
         borderWidth: 1,
+        borderColor: '#ccc',
+        borderRadius: 8,
+        paddingHorizontal: 12,
         paddingVertical: 10,
-    },
-    textosInputs:{
-        fontSize:30,
         color: 'black',
-        marginTop:10
+        backgroundColor: '#f9f9f9',
+        textAlign: 'center',
+        fontSize: 16,
     },
-    tituloFormulario:{
-        fontSize: 25,
-        padding: 5,
+    textosInputs: {
+        fontSize: 18,
+        color: '#333',
+        marginTop: 8,
+        marginHorizontal: 20,
+        fontWeight: '500',
+    },
+    tituloFormulario: {
+        fontSize: 26,
+        paddingVertical: 12,
+        paddingHorizontal: 10,
         fontWeight: 'bold',
-        color: 'black',
-        backgroundColor: '#229adfff',
-        borderRadius: 5,
-        width: '100%',
-        textAlign: 'center'
+        color: 'white',
+        backgroundColor: '#229adf',
+        borderRadius: 10,
+        textAlign: 'center',
+        marginVertical: 20,
+        elevation: 3,
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.2,
+        shadowRadius: 3,
+    },
+    textoResultado: {
+        fontSize: 22,
+        color: '#1a1a1a',
+        marginTop: 15,
+        textAlign: 'center',
+        fontWeight: '600',
     }
 })
