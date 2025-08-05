@@ -63,7 +63,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 10,
         color: 'black',
         backgroundColor: '#f9f9f9',
-        textAlign: 'center',
+
         fontSize: 16,
     },
     textosInputs: {
