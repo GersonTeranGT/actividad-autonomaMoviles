@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
         marginVertical: 5,
         padding: 5,
     },
-    titulo: {
+    title: {
         fontSize: 26,
         paddingVertical: 12,
         paddingHorizontal: 10,
@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
     },
-    imagen: {
+    image: {
         width: 220,
         height: 220,
         marginVertical: 50,
@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
         borderRadius: 10,
         marginRight: 10
     },
-    textbutton: {
+    textButton: {
         color: 'white',
         fontSize: 17,
         fontWeight: 'bold'
@@ -66,14 +66,14 @@ export const styles = StyleSheet.create({
 
         fontSize: 16,
     },
-    textosInputs: {
+    textInputs: {
         fontSize: 18,
         color: '#333',
         marginTop: 8,
         marginHorizontal: 20,
         fontWeight: '500',
     },
-    tituloFormulario: {
+    titleForm: {
         fontSize: 26,
         paddingVertical: 12,
         paddingHorizontal: 10,
@@ -88,7 +88,7 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
         shadowRadius: 3,
     },
-    textoResultado: {
+    textResult: {
         fontSize: 22,
         color: '#1a1a1a',
         marginTop: 15,

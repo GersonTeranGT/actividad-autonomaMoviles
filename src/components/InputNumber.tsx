@@ -10,10 +10,10 @@ interface Props {
 
 export const InputNumber = ({ value, onChangeText, keyboardType }: Props) => {
     //Validacion para que los inputs acepten solo numeros
-    const validacion = /^-?\d*\.?\d*$/;
+    const validation = /^-?\d*\.?\d*$/;
 
-    const change = (text: string) => {
-        if (validacion.test(text)) {
+    const changeText = (text: string) => {
+        if (validation.test(text)) {
             onChangeText(text);
         }
     };
@@ -23,7 +23,7 @@ export const InputNumber = ({ value, onChangeText, keyboardType }: Props) => {
             style={styles.input}
             maxLength={10}
             value={value}
-            onChangeText={change}
+            onChangeText={changeText}
             placeholder='Ingrese un número'
             keyboardType={keyboardType}
         />

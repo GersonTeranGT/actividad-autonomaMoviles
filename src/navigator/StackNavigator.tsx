@@ -1,6 +1,6 @@
 import { createStackNavigator } from '@react-navigation/stack';
-import { ScreenInicio } from '../screens/ScreenInicio';
-import { ScreenFormulario } from '../screens/ScreenFormulario';
+import { ScreenHome } from '../screens/ScreenHome';
+import { ScreenForm } from '../screens/ScreenForm';
 import { styles } from '../theme/appTheme';
 
 const Stack = createStackNavigator();
@@ -21,8 +21,8 @@ export const StackNavigator=()=> {
             }
         }}
         >
-            <Stack.Screen name="Home" options={{headerShown: false, title:'Inicio', animation:'fade_from_bottom'}} component={ScreenInicio} />
-            <Stack.Screen name="Calcular" component={ScreenFormulario} />
+            <Stack.Screen name="Home" options={{headerShown: false, title:'Inicio', animation:'fade_from_bottom'}} component={ScreenHome} />
+            <Stack.Screen name="Calcular" component={ScreenForm} />
         </Stack.Navigator>
     );
 }

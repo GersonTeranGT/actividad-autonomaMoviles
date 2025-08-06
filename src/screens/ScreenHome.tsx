@@ -2,21 +2,20 @@ import React from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import { styles } from '../theme/appTheme';
 import { CommonActions, useNavigation } from '@react-navigation/native';
+import { ButtonComponent } from '../components/ButtonComponent';
 
-export const ScreenInicio = () => {
+export const ScreenHome = () => {
     const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>BIENVENIDO</Text>
+            <Text style={styles.title}>BIENVENIDO</Text>
             <Image 
-            style={styles.imagen}
+            style={styles.image}
             source={{
                 uri:'https://cdn-icons-png.flaticon.com/128/2645/2645725.png'
             }}/>
             <View>
-                <TouchableOpacity style={styles.button} onPress={()=> navigation.dispatch(CommonActions.navigate({name:'Calcular'}))}>
-                    <Text style={styles.textbutton}>ACCEDER</Text>
-                </TouchableOpacity>
+                <ButtonComponent title='ACCEDER' operation={()=> navigation.dispatch(CommonActions.navigate({name:'Calcular'}))}/>
             </View>
         </View>
     )
